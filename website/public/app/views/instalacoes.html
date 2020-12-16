@@ -1,0 +1,21 @@
+<div>
+    <h1 class="title-sec">Instalações</h1>
+    <table class="table table-striped table-bordered table-select" style="width:100%">
+        <thead><tr>
+            <th>Cliente</th>
+            <th>Nº dispositivo</th>
+            <th>Data da instalação</th>
+            <th>Endereço</th>
+        </tr></thead>
+        <tbody>
+            <tr ng-repeat="rowInstalacao in instalacoes">
+                <td>{{rowInstalacao.cliente}}</td>
+                <td>{{rowInstalacao.dispositivo}}</td>
+                <td>{{rowInstalacao.data}}</td>
+                <td>{{rowInstalacao.logradouro}}</td>
+                <td><button class="btn btn-default" style="border-radius:50%;" ng-click="excluirInstalacao(rowInstalacao.$id)">X</button></td></tr>
+            </tr>
+        <tbody>
+    <table>
+    <a href="#/cadastrarInstalacao" class="btn btn-default fab" style="border-radius:50%;">+</a>
+</div>

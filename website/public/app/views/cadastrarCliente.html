@@ -1,0 +1,20 @@
+<div>
+    <h1 class="title-sec">Cadastrar Cliente</h1>
+    <div class="container cadastro-container">
+    <div class="jumbotron">
+    <form ng-submit="addCliente()">
+        <span>Nome: </span><input type="text" class="form-control" name="nome" placeholder="Digite o nome do cliente" ng-model="cliente.nome" required>
+        <input type="radio" name="pessoa" value="f" ng-model="cliente.tipo" required>Pessoa Física
+        <input type="radio" name="pessoa" value="j" ng-model="cliente.tipo" required>Pessoa Jurídica
+        <br><br>
+        <span>CPF: </span><input type="text" class="form-control" name="cpf" ng-model="cliente.cpf">
+        <span>ou</span><br><br>
+        <span>CNPJ: </span><input type="text" class="form-control" name="cnpj" ng-model="cliente.cnpj">
+        <span>Telefone: </span><input type="text" class="form-control" name="cnpj" ng-model="cliente.telefone">
+        <br>
+        <button type="submit" class="btn btn-default btn-md cadastrar-btn">Salvar</button>
+        
+    </form>
+    </div>
+    </div>
+</div>

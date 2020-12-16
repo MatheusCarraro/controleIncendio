@@ -1,0 +1,56 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <title>Controle Incêndio</title>
+
+    <!-- Angular and Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- AngularJS -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script> -->
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
+    <!-- Firebase -->
+    <!-- <script defer src="/__/firebase/7.2.0/firebase-app.js"></script>
+    <script defer src="/__/firebase/7.2.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.2.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.2.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.2.0/firebase-storage.js"></script>
+    <script defer src="/__/firebase/init.js"></script> -->
+
+    <!-- Local Files -->
+    <script src="app/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="app/styles/main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#/">
+            <img src="images/flame.svg" width="35px" height="35px" alt="logo">
+            Controle de incêndio
+          </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#/home"><span class="glyphicon glyphicon-home"></span> Clientes</a></li>
+          <li><a href="#/instalacoes"><span class="glyphicon glyphicon-book"></span> Instalações</a></li>
+          <li><a href="#/ocorrencias"><span class="glyphicon glyphicon-comment"></span> Ocorrências</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    <div ng-view></div>
+  </body>
+</html>

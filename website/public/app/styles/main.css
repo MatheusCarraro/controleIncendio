@@ -1,0 +1,67 @@
+.dot{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.title{
+    position: relative;
+    top: 50px;
+}
+
+.title-sec{
+    position: relative;
+    left: 40%;
+    top: -10px;
+}
+
+.login-container{
+    position: relative;
+    top: 100px;
+    width: 40%;
+}
+
+.cadastro-container{
+  position: relative;
+  top: -10px;
+  width: 70%;
+}
+
+.cadastrar-btn{
+  position: relative;
+  left: 50%;
+}
+
+.form-control{
+    margin:0px 0px 20px 0px;
+    width: 100%;
+}
+
+.side-menu{
+    position: relative;
+    top: 50px;
+    float: left;
+    width:18%;
+}
+
+.menu-ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.table-select{
+  position: relative;
+  left: 9%;
+  top:-10px;
+  width: 80% !important;
+}
+
+.fab{
+  position: relative;
+  top: 10px;
+  right: 11%;
+  float: right;
+}
